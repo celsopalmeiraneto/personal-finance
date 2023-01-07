@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/celsopalmeiraneto/personal-finance.git"
+    "url": "git+https://github.com/celsopalmeiraneto/personal-finances.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/celsopalmeiraneto/personal-finance/issues"
+    "url": "https://github.com/celsopalmeiraneto/personal-finances/issues"
   },
-  "homepage": "https://github.com/celsopalmeiraneto/personal-finance#readme",
+  "homepage": "https://github.com/celsopalmeiraneto/personal-finances#readme",
   "devDependencies": {
     "@hapi/code": "9.0.2",
     "@hapi/lab": "25.0.1",
