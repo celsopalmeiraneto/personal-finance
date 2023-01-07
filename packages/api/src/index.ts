@@ -1,3 +1,5 @@
+import 'reflect-metadata';
+
 const main = () => {
   return new Promise<void>((resolve, reject) => {
     setTimeout(() => {
