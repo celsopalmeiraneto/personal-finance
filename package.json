@@ -1,0 +1,22 @@
+{
+  "name": "personal-finance",
+  "version": "1.0.0",
+  "description": "Yet another project to spend time on instead of keep using my Excel spreadsheet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celsopalmeiraneto/personal-finance.git"
+  },
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/celsopalmeiraneto/personal-finance/issues"
+  },
+  "homepage": "https://github.com/celsopalmeiraneto/personal-finance#readme",
+  "workspaces": [
+    "packages/api"
+  ]
+}
