@@ -28,6 +28,11 @@ export const config = convict({
       env: 'API_DB_DATABASES',
       format: String,
     },
+    synchronize: {
+      default: false,
+      env: 'API_DB_SYNCHRONIZE',
+      format: Boolean,
+    },
   },
 });
 
