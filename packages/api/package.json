@@ -22,6 +22,7 @@
   "devDependencies": {
     "@hapi/code": "9.0.2",
     "@hapi/lab": "25.0.1",
+    "@types/convict": "6.1.1",
     "@types/es6-shim": "0.31.42",
     "@types/node": "18.11.18",
     "@types/sinon": "10.0.13",
@@ -34,6 +35,7 @@
     "typescript": "4.9.4"
   },
   "dependencies": {
+    "convict": "6.2.3",
     "mysql2": "2.3.3",
     "reflect-metadata": "0.1.13",
     "typeorm": "0.3.11"
