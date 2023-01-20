@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { LedgerItem } from './LedgerItem';
 

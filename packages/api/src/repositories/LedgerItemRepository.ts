@@ -1,7 +1,6 @@
 import { ApiDataSource } from '../data-source';
 import { Ledger } from '../entities/Ledger';
 import { LedgerItem } from '../entities/LedgerItem';
-import { LedgerItemDetail } from '../entities/LedgerItemDetail';
 import { LedgerItemDetailRepository } from './LedgerItemDetailRepository';
 import { LedgerRepository } from './LedgerRepository';
 
