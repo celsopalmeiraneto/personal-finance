@@ -13,7 +13,7 @@ export class Ledger {
   @Column({
     type: 'integer',
   })
-  balance: number;
+  balanceInCents: number;
 
   @Column({
     type: 'varchar',

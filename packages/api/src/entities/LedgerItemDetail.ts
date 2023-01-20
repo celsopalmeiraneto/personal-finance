@@ -16,5 +16,5 @@ export class LedgerItemDetail {
   @Column({
     type: 'integer',
   })
-  value: number;
+  valueInCents: number;
 }
