@@ -11,7 +11,7 @@ export class LedgerItem {
   ledger: Ledger;
 
   @Column({
-    type: 'timestamp',
+    type: 'datetime',
   })
   ts: Date;
 
@@ -23,6 +23,7 @@ export class LedgerItem {
 
   @Column({
     type: 'integer',
+    unsigned: false,
   })
   totalInCents: number;
 }

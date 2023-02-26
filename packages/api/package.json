@@ -2,10 +2,10 @@
   "name": "api",
   "version": "1.1.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "license": "Unlicense",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node dist/src/index.js",
     "test": "lab --verbose",
     "build": "tsc",
     "lint": "eslint src/**"
@@ -37,8 +37,10 @@
   },
   "dependencies": {
     "convict": "6.2.3",
+    "joi": "17.7.0",
     "mysql2": "2.3.3",
     "reflect-metadata": "0.1.13",
-    "typeorm": "0.3.11"
+    "typeorm": "0.3.11",
+    "xlsx": "0.18.5"
   }
 }

@@ -25,7 +25,7 @@ export const config = convict({
     },
     database: {
       default: 'finances',
-      env: 'API_DB_DATABASES',
+      env: 'API_DB_DATABASE',
       format: String,
     },
     synchronize: {

@@ -20,7 +20,7 @@ export const LedgerItemRepository = ApiDataSource.getRepository(LedgerItem).exte
     item.ledger = ledger;
     item.name = name;
     item.ts = ts;
-    item.totalInCents = amountInCents;
+    item.totalInCents = 0;
 
     await this.manager.transaction(async (manager) => {
       await manager.getRepository(LedgerItem).save(item, { reload: true });
