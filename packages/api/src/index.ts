@@ -1,16 +1,15 @@
-import 'reflect-metadata';
+import { server } from '@hapi/hapi';
+import { config } from './config';
 
-const main = () => {
-  return new Promise<void>((resolve, reject) => {
-    setTimeout(() => {
-      console.log('Hello World!');
-
-      return resolve();
-    }, 1000);
+const main = async () => {
+  const serverInstance = server({
+    port: config.get('server.port'),
+    host: '0.0.0.0',
   });
-};
 
-export const sum = (termA: number, termB: number) => termA + termB;
+  await serverInstance.start();
+  console.log('Server running on %s', serverInstance.info.uri);
+};
 
 (async () => {
   await main();

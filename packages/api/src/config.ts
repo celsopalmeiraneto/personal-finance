@@ -34,6 +34,13 @@ export const config = convict({
       format: Boolean,
     },
   },
+  server: {
+    port: {
+      default: 4000,
+      env: 'API_SERVER_PORT',
+      format: Number,
+    },
+  },
 });
 
 config.validate();
