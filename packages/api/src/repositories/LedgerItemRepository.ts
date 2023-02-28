@@ -10,9 +10,11 @@ export const LedgerItemRepository = ApiDataSource.getRepository(LedgerItem).exte
     name,
     amountInCents,
     ledger,
+    category,
   }: {
     ts: Date;
     name: string;
+    category: string;
     amountInCents: number;
     ledger: Ledger;
   }): Promise<LedgerItem> {
@@ -28,6 +30,8 @@ export const LedgerItemRepository = ApiDataSource.getRepository(LedgerItem).exte
         item,
         name,
         valueInCents: amountInCents,
+        ts,
+        category,
       });
 
       return item;

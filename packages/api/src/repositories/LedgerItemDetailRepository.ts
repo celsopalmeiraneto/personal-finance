@@ -7,15 +7,21 @@ export const LedgerItemDetailRepository = ApiDataSource.getRepository(LedgerItem
   async addDetail({
     item,
     name,
+    category,
+    ts,
     valueInCents,
   }: {
     item: LedgerItem;
     name: string;
+    category: string;
+    ts: Date;
     valueInCents: number;
   }): Promise<LedgerItemDetail> {
     const detail = new LedgerItemDetail();
     detail.item = item;
     detail.name = name;
+    detail.category = category;
+    detail.ts = ts;
     detail.valueInCents = valueInCents;
 
     return this.manager.transaction(async (manager) => {
